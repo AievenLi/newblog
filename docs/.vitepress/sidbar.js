@@ -1,13 +1,25 @@
+import {set_sidebar} from './set_sidbar'
 const web_bar = [
   {
     text:"前端",
-    link:""
+    link:"/docs/web/one"
+  }
+]
+const flutter_bar = [
+  {
+    text:"flutter测试",
+    link:"flutter/test"
+  },
+  {
+    text:"flutter测试2",
+    link:"flutter/test1"
   }
 ]
 
 
 export const sidebar = {
-  "/docs/js/notes/huyu/": web_bar,
+  "/docs/web": web_bar,
+  "/flutter":set_sidebar('flutter')
 };
 
 // const rust_notes = [
